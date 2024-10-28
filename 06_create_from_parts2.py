@@ -10,3 +10,10 @@ grades_df.index = ['test1', 'test2', 'test3']
 functions.print_it('Dictionary entries', grades_df)
 # create a dataframe with 3-digit student numbers as index, 
 # and data that stores three quiz grades  <<< TO DO
+grades2_dict = {'name':['sak','vam','har'],
+                'quiz1':[90,87,51],
+                'quiz2':[89,98,78],
+                'quiz3':[98,98,98]}
+grades1_df = pd.DataFrame(grades2_dict)
+grades1_df.index = [111,222,333]
+functions.print_it('Dictionary entries', grades1_df)
